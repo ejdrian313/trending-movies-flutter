@@ -20,6 +20,7 @@
 # is commented out by default.
 #.vscode/
 lib/infrastructure/services/app_settings.dart
+coverage/
 
 # Flutter/Dart/Pub related
 **/doc/api/

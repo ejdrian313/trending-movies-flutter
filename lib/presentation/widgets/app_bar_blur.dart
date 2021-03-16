@@ -21,7 +21,7 @@ class AppBarBlur {
         style: TextStyle(color: Colors.white),
       ),
       actions: [
-        popUntilBase == true && context != null
+        showCloseAll(popUntilBase, context)
             ? Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: InkWell(
@@ -34,4 +34,6 @@ class AppBarBlur {
       ],
     );
   }
+
+  static bool showCloseAll(bool popUntilBase, BuildContext context) => popUntilBase == true && context != null;
 }
